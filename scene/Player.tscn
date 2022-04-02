@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Script/Player.gd" type="Script" id=1]
-[ext_resource path="res://Img/viking2.png" type="Texture" id=2]
+[ext_resource path="res://Img/player/idle/Egyptienplayeridle.png" type="Texture" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 8.0
-height = 3.0
+radius = 29.0
+height = 54.0
 
 [sub_resource type="Animation" id=2]
 resource_name = "Falling"
@@ -89,20 +89,17 @@ tracks/0/keys = {
 }
 
 [node name="Player" type="KinematicBody2D"]
-position = Vector2( -48, -16 )
+position = Vector2( -71, -56 )
 collision_mask = 7
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 28.5, 29 )
 texture = ExtResource( 2 )
-hframes = 9
-vframes = 6
+hframes = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 2, 7 )
+position = Vector2( 29, 28 )
 shape = SubResource( 1 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
