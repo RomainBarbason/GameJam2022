@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Grande_sauterelle.png-4b55b8737537bc8ce785428dd203b0a8.stex"
+path="res://.import/Grande_sauterelle.png-cc22f5e97260ea3ffa9e478c84277d67.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Img/Grande_sauterelle.png"
-dest_files=[ "res://.import/Grande_sauterelle.png-4b55b8737537bc8ce785428dd203b0a8.stex" ]
+source_file="res://Img/monster/Grande_sauterelle.png"
+dest_files=[ "res://.import/Grande_sauterelle.png-cc22f5e97260ea3ffa9e478c84277d67.stex" ]
 
 [params]
 

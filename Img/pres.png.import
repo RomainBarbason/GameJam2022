@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/croa.png-b3f7f8c26f566c7b0c8aba5d6a95e5ad.stex"
+path="res://.import/pres.png-e641910256f5b6dbca05835564666caf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Img/monster/croa.png"
-dest_files=[ "res://.import/croa.png-b3f7f8c26f566c7b0c8aba5d6a95e5ad.stex" ]
+source_file="res://Img/pres.png"
+dest_files=[ "res://.import/pres.png-e641910256f5b6dbca05835564666caf.stex" ]
 
 [params]
 

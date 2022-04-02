@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/croa.png-b3f7f8c26f566c7b0c8aba5d6a95e5ad.stex"
+path="res://.import/basic_tile.png-4412ec1edfed4912350158f3e0aaef0b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Img/monster/croa.png"
-dest_files=[ "res://.import/croa.png-b3f7f8c26f566c7b0c8aba5d6a95e5ad.stex" ]
+source_file="res://Img/tileset/basic_tile.png"
+dest_files=[ "res://.import/basic_tile.png-4412ec1edfed4912350158f3e0aaef0b.stex" ]
 
 [params]
 

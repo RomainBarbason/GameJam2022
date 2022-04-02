@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sauterelle.png-61b1c028ea7d0f46b3c65abccc3d2106.stex"
+path="res://.import/sauterelle.png-359443bca55aab612145ba4121844d41.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Img/sauterelle.png"
-dest_files=[ "res://.import/sauterelle.png-61b1c028ea7d0f46b3c65abccc3d2106.stex" ]
+source_file="res://Img/monster/sauterelle.png"
+dest_files=[ "res://.import/sauterelle.png-359443bca55aab612145ba4121844d41.stex" ]
 
 [params]
 
