@@ -21,11 +21,6 @@ extents = Vector2( 32, 17.375 )
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 31, 17.75 )
 
-[sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 51.625, 8.5 )
-
-[sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 48.25, 8 )
 
 [node name="Node2D" type="Node2D"]
 

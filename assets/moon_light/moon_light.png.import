@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Egyptienplayeridle.png-7ae0646f8795b0d701023a9cc23284ab.stex"
+path="res://.import/moon_light.png-6547e666d74edb322515b6f197b36d9e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Img/player/idle/Egyptienplayeridle.png"
-dest_files=[ "res://.import/Egyptienplayeridle.png-7ae0646f8795b0d701023a9cc23284ab.stex" ]
+source_file="res://assets/moon_light/moon_light.png"
+dest_files=[ "res://.import/moon_light.png-6547e666d74edb322515b6f197b36d9e.stex" ]
 
 [params]
 
