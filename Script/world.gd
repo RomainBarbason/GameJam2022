@@ -11,7 +11,7 @@ func _ready():
 	pass # Replace with fundction body.
 
 func _process(delta):
-	x += 0.0 #0.02
+	x += 0.02 #0.02
 	camera.set_h_offset(x)
 	var new_position = camera.get_camera_screen_center()
 	new_position[0] -= 520
@@ -22,3 +22,9 @@ func _process(delta):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+
+func _on_EnemyGenerator_create_enemy(enemy, location):
+	var enemy_instance = enemy.instance()
+	add_child(enemy_instance)
+	enemy_instance.global_position = location
