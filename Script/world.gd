@@ -13,9 +13,11 @@ func _ready():
 func _process(delta):
 	x += 0.0 #0.02
 	camera.set_h_offset(x)
+	var view = get_viewport_rect().size / 2
+	var camera_pos = camera.get_camera_screen_center()
 	var new_position = camera.get_camera_screen_center()
-	new_position[0] -= 520
-	new_position[1] -= 300
+	new_position[0] = camera_pos.x - view.x
+	new_position[1] = camera_pos.y - view.y
 	# background.rect_position = new_position
 	background.rect_position = new_position
 
