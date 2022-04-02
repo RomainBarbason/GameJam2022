@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Img/tileset/basic_tile2.png" type="Texture" id=1]
 [ext_resource path="res://Img/tileset/dirt.png" type="Texture" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://Img/tileset/blood_up.png" type="Texture" id=7]
 [ext_resource path="res://Img/tileset/sable2.png" type="Texture" id=8]
 [ext_resource path="res://Img/tileset/sable2bord.png" type="Texture" id=9]
+[ext_resource path="res://Img/tileset/plateformebois.png" type="Texture" id=10]
+[ext_resource path="res://Img/tileset/Plateformebord.png" type="Texture" id=11]
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 32, 32 )
@@ -19,8 +21,6 @@ extents = Vector2( 32, 17.375 )
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 31, 17.75 )
 
-[sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 32, 32 )
 
 [node name="Node2D" type="Node2D"]
 
@@ -110,3 +110,30 @@ position = Vector2( 429, -57 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sable2Bord/StaticBody2D"]
 position = Vector2( -428, 71.75 )
 shape = SubResource( 7 )
+
+[node name="Plateformebois" type="Sprite" parent="."]
+position = Vector2( -335.5, 145.5 )
+scale = Vector2( 1.6, 1.6 )
+texture = ExtResource( 10 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Plateformebois"]
+position = Vector2( 85.9375, -0.312492 )
+scale = Vector2( 1, 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plateformebois/StaticBody2D"]
+position = Vector2( -86.0156, -26.875 )
+scale = Vector2( 0.625, 0.625 )
+shape = SubResource( 8 )
+
+[node name="Plateformebord" type="Sprite" parent="."]
+position = Vector2( -198, 145 )
+scale = Vector2( 1.6, 1.6 )
+texture = ExtResource( 11 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Plateformebord"]
+position = Vector2( -85.7812, 0.312492 )
+scale = Vector2( 0.625, 0.625 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Plateformebord/StaticBody2D"]
+position = Vector2( 140.25, -43.5 )
+shape = SubResource( 9 )

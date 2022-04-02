@@ -52,7 +52,6 @@ format = 1
 tile_data = PoolIntArray( -3, 11, 0, -65535, 11, 0 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
-current = true
 
 [node name="Sauterelle" parent="." instance=ExtResource( 5 )]
 
