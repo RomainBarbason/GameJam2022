@@ -12,7 +12,7 @@ func _ready():
 	pass # Replace with fundction body.
 
 func _process(delta):
-	x += 0.0 #0.02
+	x += 0.02 #0.02
 	camera.set_h_offset(x)
 	var view = get_viewport_rect().size / 2
 	var camera_pos = camera.get_camera_screen_center()
@@ -28,3 +28,13 @@ func _process(delta):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+
+func _on_EnemyGenerator_create_enemy(enemy, location):
+	var enemy_instance = enemy.instance()
+	add_child(enemy_instance)
+	var camera_pos = camera.get_camera_screen_center()
+	var view = get_viewport_rect().size / 2
+	enemy_instance.global_position = Vector2(rand_range(camera_pos.x - view.x, camera_pos.x + view.x),camera_pos.y - view.y)
+	
+	
