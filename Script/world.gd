@@ -3,6 +3,7 @@ extends Node2D
 
 onready var camera = $Camera2D
 onready var background = $Background
+onready var player = $Player
 var x = 0
 
 
@@ -20,6 +21,9 @@ func _process(delta):
 	new_position[1] = camera_pos.y - view.y
 	# background.rect_position = new_position
 	background.rect_position = new_position
+	
+	if player.get_position().x < (camera_pos.x - view.x)-30:
+		get_tree().reload_current_scene()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
