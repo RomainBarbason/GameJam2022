@@ -42,6 +42,10 @@ config/name="GameJam2022"
 run/main_scene="res://scene/LevelTestSeb.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Time="*res://src/singletons/time.gd"
+
 [input]
 
 right={
