@@ -1,9 +1,10 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://premierTuto/Player.gd" type="Script" id=1]
-[ext_resource path="res://premierTuto/viking2.png" type="Texture" id=2]
+[ext_resource path="res://Script/Player.gd" type="Script" id=1]
+[ext_resource path="res://Img/viking2.png" type="Texture" id=2]
 [ext_resource path="res://Img/tileset/SimpleTileSet.tres" type="TileSet" id=3]
-[ext_resource path="res://premierTuto/world.gd" type="Script" id=4]
+[ext_resource path="res://Script/world.gd" type="Script" id=4]
+
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 8.0
@@ -94,7 +95,16 @@ tracks/0/keys = {
 position = Vector2( 1, -1 )
 script = ExtResource( 4 )
 
+<<<<<<< Updated upstream
 [node name="Camera2D" type="Camera2D" parent="."]
+=======
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 3 )
+format = 1
+tile_data = PoolIntArray( -131069, 0, 0, -65534, 0, 0, -65533, 0, 0, 65531, 0, 0, 65533, 0, 0, 65534, 0, 0, 65535, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0 )
+
+[node name="Player" type="KinematicBody2D" parent="."]
+>>>>>>> Stashed changes
 position = Vector2( -48, -16 )
 offset = Vector2( 0, -130 )
 rotating = true
@@ -119,14 +129,24 @@ vframes = 6
 position = Vector2( 2, 7 )
 shape = SubResource( 1 )
 
+<<<<<<< Updated upstream
+=======
+[node name="Camera2D" type="Camera2D" parent="Player"]
+zoom = Vector2( 0.4, 0.4 )
+smoothing_enabled = true
+
+>>>>>>> Stashed changes
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Player"]
 anims/Falling = SubResource( 2 )
 anims/Idle = SubResource( 3 )
 anims/Jump = SubResource( 4 )
 anims/RESET = SubResource( 5 )
 anims/Running = SubResource( 6 )
+<<<<<<< Updated upstream
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 3 )
 format = 1
 tile_data = PoolIntArray( -131069, 4, 0, -65534, 4, 0, -65533, 4, 0, 65531, 5, 0, 65533, 5, 0, 65534, 5, 0, 65535, 5, 0, 0, 5, 0, 1, 5, 0, 2, 5, 0, 3, 5, 0, 5, 5, 0, 6, 5, 0, 7, 5, 0 )
+=======
+>>>>>>> Stashed changes

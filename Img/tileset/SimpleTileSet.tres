@@ -6,7 +6,7 @@
 [ext_resource path="res://Img/tileset/water.png" type="Texture" id=4]
 [ext_resource path="res://Img/tileset/up_water.png" type="Texture" id=5]
 [ext_resource path="res://Img/tileset/blood_up.png" type="Texture" id=6]
-[ext_resource path="res://premierTuto/viking2.png" type="Texture" id=7]
+[ext_resource path="res://Img/viking2.png" type="Texture" id=7]
 [ext_resource path="res://Img/tileset/blood.png" type="Texture" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
