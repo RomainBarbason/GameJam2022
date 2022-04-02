@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sauterelle_jump_contour_prod.png-7fee37fbede92afe6fc10774e71c9873.stex"
+path="res://.import/skull_pannel.png-78a0475a575783df7db9450f1b00ab72.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Img/monster/Sauterelle_jump_contour_prod.png"
-dest_files=[ "res://.import/Sauterelle_jump_contour_prod.png-7fee37fbede92afe6fc10774e71c9873.stex" ]
+source_file="res://Img/tileset/skull_pannel.png"
+dest_files=[ "res://.import/skull_pannel.png-78a0475a575783df7db9450f1b00ab72.stex" ]
 
 [params]
 
