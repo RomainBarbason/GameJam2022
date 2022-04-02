@@ -49,5 +49,10 @@ func _physics_process(delta):
 		elif motion.y > 0:
 			$AnimationPlayer.play("Falling")
 		
+	if Input.is_action_pressed("Die"):
+		die()
 
 	motion = move_and_slide(motion,UP)
+	
+func die():
+	get_tree().reload_current_scene()

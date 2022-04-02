@@ -11,7 +11,7 @@ func _ready():
 	pass # Replace with fundction body.
 
 func _process(delta):
-	x += 0.02 #0.02
+	x += 0.0 #0.02
 	camera.set_h_offset(x)
 	var new_position = camera.get_camera_screen_center()
 	new_position[0] -= 520
