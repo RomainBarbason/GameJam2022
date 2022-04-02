@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://premierTuto/Player.gd" type="Script" id=1]
 [ext_resource path="res://premierTuto/viking2.png" type="Texture" id=2]
 [ext_resource path="res://Img/tileset/SimpleTileSet.tres" type="TileSet" id=3]
+[ext_resource path="res://premierTuto/world.gd" type="Script" id=4]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 8.0
@@ -90,9 +91,18 @@ tracks/0/keys = {
 }
 
 [node name="World" type="Node2D"]
+position = Vector2( 1, -1 )
+script = ExtResource( 4 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( -48, -16 )
+offset = Vector2( 0, -130 )
+zoom = Vector2( 0.986, 0.7 )
+drag_margin_h_enabled = true
+editor_draw_limits = true
 
 [node name="Player" type="KinematicBody2D" parent="."]
-position = Vector2( -48, -16 )
+position = Vector2( -144, -48 )
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_group_": true
@@ -122,4 +132,4 @@ anims/Running = SubResource( 6 )
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 3 )
 format = 1
-tile_data = PoolIntArray( -131069, 0, 0, -65534, 0, 0, -65533, 0, 0, 65531, 0, 0, 65533, 0, 0, 65534, 0, 0, 65535, 0, 0, 0, 0, 0, 1, 0, 0, 2, 0, 0, 3, 0, 0, 5, 0, 0, 6, 0, 0, 7, 0, 0 )
+tile_data = PoolIntArray( -131069, 4, 0, -65534, 4, 0, -65533, 4, 0, 65531, 5, 0, 65533, 5, 0, 65534, 5, 0, 65535, 5, 0, 0, 5, 0, 1, 5, 0, 2, 5, 0, 3, 5, 0, 5, 5, 0, 6, 5, 0, 7, 5, 0 )
