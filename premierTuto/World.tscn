@@ -97,6 +97,7 @@ script = ExtResource( 4 )
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( -48, -16 )
 offset = Vector2( 0, -130 )
+current = true
 zoom = Vector2( 0.986, 0.7 )
 drag_margin_h_enabled = true
 editor_draw_limits = true
@@ -116,11 +117,6 @@ vframes = 6
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2( 2, 7 )
 shape = SubResource( 1 )
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-current = true
-zoom = Vector2( 0.4, 0.4 )
-smoothing_enabled = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Player"]
 anims/Falling = SubResource( 2 )
