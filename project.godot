@@ -14,17 +14,17 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/day_night_cycle/day_night_cycle.gd"
 }, {
-"base": "Reference",
+"base": "PopupPanel",
 "class": "DebugOverlay",
 "language": "GDScript",
 "path": "res://src/debug_overlay/debug_overlay.gd"
 }, {
-"base": "KinematicBody2D",
+"base": "Reference",
 "class": "Mob",
 "language": "GDScript",
 "path": "res://Script/Sauterelle.gd"
 }, {
-"base": "Reference",
+"base": "Light2D",
 "class": "MoonLight",
 "language": "GDScript",
 "path": "res://src/moon_light/moon_light.gd"
@@ -36,23 +36,11 @@ _global_script_class_icons={
 "MoonLight": ""
 }
 
-[Autoload]
-
-Time="*res://src/singletons/time.gd"
-
 [application]
 
 config/name="GameJam2022"
 run/main_scene="res://scene/LevelTestSeb.tscn"
 config/icon="res://icon.png"
-
-[autoload]
-
-Time="*res://src/singletons/time.gd"
-
-[global]
-
-Time=false
 
 [input]
 
@@ -86,8 +74,11 @@ Die={
 2d_physics/layer_1="Player"
 2d_physics/layer_2="Mob"
 2d_physics/layer_3="Ground"
-2d_physics/layer_4="Invisible"
 
 [physics]
 
 common/enable_pause_aware_picking=true
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"
