@@ -17,11 +17,11 @@ func _ready():
 
 
 func _on_Level1Button_pressed():
-	get_tree().change_scene("res://scene/Level1.tscn") # Replace with function body.
+	get_tree().change_scene("res://scene/Level0.tscn") # Replace with function body.
 
 
 func _on_Level2Button_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene("res://scene/Menu.tscn")
 
 
 func _on_Level3Button_pressed():
