@@ -55,7 +55,7 @@ func _physics_process(delta):
 	motion = move_and_slide(motion,UP)
 	
 func die():
-	get_tree().reload_current_scene()
+	get_tree().change_scene("res://scene/GameOver.tscn")
 
 
 func _on_WaterCollider_body_entered(body):
