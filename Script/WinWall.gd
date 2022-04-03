@@ -20,8 +20,8 @@ func _on_WinWall_body_entered(body):
 	if get_tree().current_scene.filename == "res://scene/Level0.tscn":
 		get_tree().change_scene("res://scene/Level1Rom.tscn")
 		
-	elif get_tree().get_current_scene().get_name() == "Level1Rom":
+	if get_tree().current_scene.filename == "res://scene/Level1Rom.tscn":
 		get_tree().change_scene("res://scene/Level2.tscn")
 		
-	else:
+	if get_tree().current_scene.filename == "res://scene/Level2.tscn":
 		get_tree().change_scene("res://scene/Victory_Screen.tscn")

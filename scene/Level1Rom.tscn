@@ -57,9 +57,6 @@ position = Vector2( 483, 40 )
 [node name="Sauterelle2" parent="." instance=ExtResource( 11 )]
 position = Vector2( 1182, 42 )
 
-[node name="Sauterelle3" parent="." instance=ExtResource( 11 )]
-position = Vector2( 2863, 43 )
-
 [node name="Arriere" type="TileMap" parent="."]
 position = Vector2( -200, 235 )
 tile_set = ExtResource( 2 )
@@ -83,6 +80,9 @@ texture = ExtResource( 6 )
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( -329, 217 )
 scale = Vector2( 0.18, 0.18 )
+
+[node name="Sauterelle3" parent="." instance=ExtResource( 11 )]
+position = Vector2( 2863, 43 )
 
 [node name="EndLevelPyramideWallForeground" type="Sprite" parent="."]
 position = Vector2( 3433.03, 129.614 )
