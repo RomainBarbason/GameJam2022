@@ -80,6 +80,22 @@ texture = ExtResource( 10 )
 position = Vector2( 6, 47 )
 current = true
 
+[node name="SkullPannel" type="Sprite" parent="."]
+position = Vector2( -136, 216 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 16 )
+
+[node name="DeathText" type="Label" parent="."]
+margin_left = -128.0
+margin_top = 184.0
+margin_right = -70.0
+margin_bottom = 226.0
+text = "00"
+script = ExtResource( 15 )
+__meta__ = {
+"_editor_description_": ""
+}
+
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( -296, 208 )
 scale = Vector2( 0.18, 0.18 )
@@ -126,21 +142,6 @@ autoplay = true
 [node name="EndLevelPyramideWallForeground" type="Sprite" parent="."]
 position = Vector2( 3232, 130 )
 texture = ExtResource( 13 )
-
-[node name="SkullPannel" type="Sprite" parent="."]
-position = Vector2( -168, 184 )
-texture = ExtResource( 16 )
-
-[node name="Label" type="Label" parent="."]
-margin_left = -168.0
-margin_top = 144.0
-margin_right = -70.0
-margin_bottom = 198.0
-text = "asasasasasasas"
-script = ExtResource( 15 )
-__meta__ = {
-"_editor_description_": ""
-}
 
 [connection signal="body_entered" from="WinWall" to="WinWall" method="_on_WinWall_body_entered"]
 [connection signal="create_enemy" from="EnemyGenerator2" to="." method="_on_EnemyGenerator2_create_enemy"]
