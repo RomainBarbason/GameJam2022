@@ -14,8 +14,8 @@
 [ext_resource path="res://music/gamejam2.mp3" type="AudioStream" id=12]
 [ext_resource path="res://Img/background/End_level_pyramide_wall_foreground.png" type="Texture" id=13]
 [ext_resource path="res://music/Victoire.wav" type="AudioStream" id=14]
-[ext_resource path="res://scene/mouches.tscn" type="PackedScene" id=15]
-[ext_resource path="res://scene/mouches.gd" type="Script" id=16]
+[ext_resource path="res://Script/Label.gd" type="Script" id=15]
+[ext_resource path="res://Img/tileset/skull_pannel.png" type="Texture" id=16]
 
 [sub_resource type="Shader" id=4]
 code = "shader_type canvas_item;
@@ -79,6 +79,22 @@ texture = ExtResource( 10 )
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 6, 47 )
 current = true
+
+[node name="SkullPannel" type="Sprite" parent="."]
+position = Vector2( -136, 216 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 16 )
+
+[node name="DeathText" type="Label" parent="."]
+margin_left = -128.0
+margin_top = 184.0
+margin_right = -70.0
+margin_bottom = 226.0
+text = "00"
+script = ExtResource( 15 )
+__meta__ = {
+"_editor_description_": ""
+}
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( -296, 208 )
