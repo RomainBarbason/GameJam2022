@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/gamejam22.wav-f4560c756ada6d0881f4b883ec9f5eac.sample"
+
+[deps]
+
+source_file="res://music/gamejam22.wav"
+dest_files=[ "res://.import/gamejam22.wav-f4560c756ada6d0881f4b883ec9f5eac.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
