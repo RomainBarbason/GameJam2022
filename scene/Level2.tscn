@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://Img/background/Pyramide_prod.png" type="Texture" id=1]
+[ext_resource path="res://Img/background/Nil_eclipse_prod.png" type="Texture" id=1]
 [ext_resource path="res://scene/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Script/ScrollingBackground.gd" type="Script" id=3]
 [ext_resource path="res://Script/world.gd" type="Script" id=4]
@@ -23,7 +23,7 @@ void fragment(){
 shader = SubResource( 1 )
 shader_param/scroll_speed = null
 
-[node name="Node2D" type="Node2D"]
+[node name="Level3" type="Node2D"]
 script = ExtResource( 4 )
 
 [node name="Background" type="TextureRect" parent="."]
@@ -52,7 +52,6 @@ format = 1
 tile_data = PoolIntArray( -3, 9, 0, -65535, 9, 0 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
-current = true
 
 [node name="Sauterelle" parent="." instance=ExtResource( 5 )]
 

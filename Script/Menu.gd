@@ -21,8 +21,8 @@ func _on_Level1Button_pressed():
 
 
 func _on_Level2Button_pressed():
-	get_tree().change_scene("res://scene/Menu.tscn")
+	get_tree().change_scene("res://scene/Level1Rom.tscn")
 
 
 func _on_Level3Button_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene("res://scene/Level2.tscn")
