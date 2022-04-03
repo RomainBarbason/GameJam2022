@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Img/background/Nil_eclipse_prod.png" type="Texture" id=1]
 [ext_resource path="res://scene/Player.tscn" type="PackedScene" id=2]
@@ -15,7 +15,6 @@
 [ext_resource path="res://music/gamejam22.wav" type="AudioStream" id=13]
 [ext_resource path="res://Script/Label.gd" type="Script" id=14]
 [ext_resource path="res://Img/tileset/skull_pannel.png" type="Texture" id=15]
-[ext_resource path="res://scene/Monster/enemy_generator.tscn" type="PackedScene" id=16]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
@@ -36,8 +35,6 @@ extents = Vector2( 45, 214.5 )
 
 [node name="Level3" type="Node2D"]
 script = ExtResource( 4 )
-
-[node name="EnemyGenerator" parent="." instance=ExtResource( 14 )]
 
 [node name="Background" type="TextureRect" parent="."]
 material = SubResource( 2 )
@@ -81,15 +78,15 @@ position = Vector2( 5504, 90 )
 texture = ExtResource( 11 )
 
 [node name="SkullPannel" type="Sprite" parent="."]
-position = Vector2( -166, 173 )
-scale = Vector2( 0.46875, 0.453125 )
+position = Vector2( -160, 168 )
+scale = Vector2( 0.46875, 0.46875 )
 texture = ExtResource( 15 )
 
 [node name="DeathText" type="Label" parent="."]
-margin_left = -160.0
-margin_top = 144.0
-margin_right = -90.0
-margin_bottom = 183.0
+margin_left = -152.0
+margin_top = 138.0
+margin_right = -134.0
+margin_bottom = 178.0
 text = "00"
 script = ExtResource( 14 )
 __meta__ = {
@@ -97,7 +94,7 @@ __meta__ = {
 }
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( -376, 168 )
+position = Vector2( -384, 160 )
 scale = Vector2( 0.18, 0.18 )
 
 [node name="MoonLight" parent="Player" instance=ExtResource( 8 )]
@@ -156,5 +153,4 @@ shape = SubResource( 3 )
 stream = ExtResource( 13 )
 autoplay = true
 
-[connection signal="create_enemy" from="EnemyGenerator" to="." method="_on_EnemyGenerator_create_enemy"]
 [connection signal="body_entered" from="WinWall" to="WinWall" method="_on_WinWall_body_entered"]
