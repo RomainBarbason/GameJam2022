@@ -32,7 +32,7 @@ extents = Vector2( 28.5, 5.5 )
 extents = Vector2( 32, 20.5 )
 
 [sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 32, 5.5 )
+extents = Vector2( 31, 5.5 )
 
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 30, 5.5 )
@@ -44,7 +44,7 @@ extents = Vector2( 5.5, 31.5 )
 extents = Vector2( 5, 24 )
 
 [sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 32, 20.25 )
+extents = Vector2( 32, 20.5 )
 
 [sub_resource type="RectangleShape2D" id=10]
 extents = Vector2( 32, 29.5 )
@@ -160,13 +160,13 @@ shape = SubResource( 8 )
 disabled = true
 
 [node name="Sable2Bord" type="Sprite" parent="."]
-position = Vector2( 251, 91 )
+position = Vector2( 245, 96 )
 texture = ExtResource( 7 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Sable2Bord"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sable2Bord/StaticBody2D"]
-position = Vector2( 1, 12 )
+position = Vector2( 1, 11 )
 shape = SubResource( 9 )
 
 [node name="UpWater" type="Sprite" parent="."]

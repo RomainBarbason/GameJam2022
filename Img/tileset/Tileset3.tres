@@ -29,13 +29,13 @@ extents = Vector2( 32, 32 )
 extents = Vector2( 28.5, 5.5 )
 
 [sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 32, 5.5 )
+extents = Vector2( 31, 5.5 )
 
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 30, 5.5 )
 
 [sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 32, 20.25 )
+extents = Vector2( 32, 20.5 )
 
 [resource]
 0/name = "Blood"
@@ -172,8 +172,8 @@ extents = Vector2( 32, 20.25 )
 7/tile_mode = 0
 7/occluder_offset = Vector2( 32, 32 )
 7/navigation_offset = Vector2( 32, 32 )
-7/shape_offset = Vector2( 33, 44 )
-7/shape_transform = Transform2D( 1, 0, 0, 1, 33, 44 )
+7/shape_offset = Vector2( 33, 43 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 33, 43 )
 7/shape = SubResource( 9 )
 7/shape_one_way = false
 7/shape_one_way_margin = 1.0
@@ -182,7 +182,7 @@ extents = Vector2( 32, 20.25 )
 "one_way": false,
 "one_way_margin": 1.0,
 "shape": SubResource( 9 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 33, 44 )
+"shape_transform": Transform2D( 1, 0, 0, 1, 33, 43 )
 } ]
 7/z_index = 0
 8/name = "UpWater"
