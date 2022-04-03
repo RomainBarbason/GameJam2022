@@ -9,7 +9,7 @@ var x = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with fundction body.
+	Time.prevscene = get_tree().current_scene.filename
 
 func _process(delta):
 	x += 0.02 #0.02

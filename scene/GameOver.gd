@@ -17,7 +17,7 @@ func _ready():
 
 
 func _on_Level1Button_pressed():
-	get_tree().change_scene("res://scene/Level0.tscn")
+	get_tree().change_scene(Time.prevscene)
 
 
 func _on_Level2Button_pressed():

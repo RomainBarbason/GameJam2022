@@ -40,6 +40,8 @@ var game_start_month: int = 1
 ## The year at which the game starts (0-INF).
 var game_start_year: int = 2021
 
+var prevscene = "res://scene/Level0.tscn"
+
 ## The starting hour of the dawn cycle state (0-23).
 var state_dawn_start_hour: int = 0
 ## The starting hour of the day cycle state (0-23).
