@@ -22,13 +22,13 @@ extents = Vector2( 32, 20.5 )
 extents = Vector2( 32, 32 )
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 28.5, 8 )
+extents = Vector2( 28.5, 5.5 )
 
 [sub_resource type="RectangleShape2D" id=6]
-extents = Vector2( 32, 8 )
+extents = Vector2( 32, 5.5 )
 
 [sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 30, 8 )
+extents = Vector2( 30, 5.5 )
 
 [sub_resource type="RectangleShape2D" id=9]
 extents = Vector2( 32, 20.25 )
@@ -91,8 +91,8 @@ extents = Vector2( 32, 20.25 )
 3/tile_mode = 0
 3/occluder_offset = Vector2( 32, 32 )
 3/navigation_offset = Vector2( 32, 32 )
-3/shape_offset = Vector2( 32.5, 8 )
-3/shape_transform = Transform2D( 1, 0, 0, 1, 32.5, 8 )
+3/shape_offset = Vector2( 32.5, 10.5 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 32.5, 10.5 )
 3/shape = SubResource( 5 )
 3/shape_one_way = true
 3/shape_one_way_margin = 1.0
@@ -101,7 +101,7 @@ extents = Vector2( 32, 20.25 )
 "one_way": true,
 "one_way_margin": 1.0,
 "shape": SubResource( 5 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 32.5, 8 )
+"shape_transform": Transform2D( 1, 0, 0, 1, 32.5, 10.5 )
 } ]
 3/z_index = 0
 4/name = "Plateformebois"
@@ -112,8 +112,8 @@ extents = Vector2( 32, 20.25 )
 4/tile_mode = 0
 4/occluder_offset = Vector2( 32, 32 )
 4/navigation_offset = Vector2( 32, 32 )
-4/shape_offset = Vector2( 32, 8 )
-4/shape_transform = Transform2D( 1, 0, 0, 1, 32, 8 )
+4/shape_offset = Vector2( 32, 10.5 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 32, 10.5 )
 4/shape = SubResource( 6 )
 4/shape_one_way = true
 4/shape_one_way_margin = 1.0
@@ -122,7 +122,7 @@ extents = Vector2( 32, 20.25 )
 "one_way": true,
 "one_way_margin": 1.0,
 "shape": SubResource( 6 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 32, 8 )
+"shape_transform": Transform2D( 1, 0, 0, 1, 32, 10.5 )
 } ]
 4/z_index = 0
 5/name = "Plateformebord"
@@ -133,8 +133,8 @@ extents = Vector2( 32, 20.25 )
 5/tile_mode = 0
 5/occluder_offset = Vector2( 32, 32 )
 5/navigation_offset = Vector2( 32, 32 )
-5/shape_offset = Vector2( 34, 8 )
-5/shape_transform = Transform2D( 1, 0, 0, 1, 34, 8 )
+5/shape_offset = Vector2( 34, 10.5 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 34, 10.5 )
 5/shape = SubResource( 7 )
 5/shape_one_way = true
 5/shape_one_way_margin = 1.0
@@ -143,7 +143,7 @@ extents = Vector2( 32, 20.25 )
 "one_way": true,
 "one_way_margin": 1.0,
 "shape": SubResource( 7 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 34, 8 )
+"shape_transform": Transform2D( 1, 0, 0, 1, 34, 10.5 )
 } ]
 5/z_index = 0
 6/name = "Poteau"

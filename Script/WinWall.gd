@@ -17,4 +17,4 @@ func _ready():
 
 
 func _on_WinWall_body_entered(body):
-	get_tree().change_scene("res://scene/Level1.tscn")
+	get_tree().change_scene("res://scene/Level1Rom.tscn")
