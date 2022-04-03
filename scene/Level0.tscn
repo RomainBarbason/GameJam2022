@@ -5,7 +5,7 @@
 [ext_resource path="res://Script/world.gd" type="Script" id=3]
 [ext_resource path="res://Img/background/Nil_prod.png" type="Texture" id=4]
 [ext_resource path="res://Script/ScrollingBackground.gd" type="Script" id=5]
-[ext_resource path="res://scene/Monster/enemy_generator.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scene/Monster/enemy_generator_level0.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scene/Monster/Sauterelle.tscn" type="PackedScene" id=7]
 
 [sub_resource type="Shader" id=1]
@@ -47,12 +47,10 @@ tile_data = PoolIntArray( -393191, 14, 0, -393190, 14, 0, -393189, 14, 0, -39318
 position = Vector2( 6, 47 )
 current = true
 
-[node name="EnemyGenerator" parent="." instance=ExtResource( 6 )]
-
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( -272, 211 )
 
 [node name="Sauterelle" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1041, 27 )
 
-[connection signal="create_enemy" from="EnemyGenerator" to="." method="_on_EnemyGenerator_create_enemy"]
+[node name="EnemyGenerator" parent="." instance=ExtResource( 6 )]
