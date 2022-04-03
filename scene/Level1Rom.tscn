@@ -131,6 +131,7 @@ stream = ExtResource( 9 )
 autoplay = true
 
 [node name="Invisible" type="TileMap" parent="."]
+visible = false
 tile_set = ExtResource( 2 )
 collision_layer = 32
 collision_mask = 0
