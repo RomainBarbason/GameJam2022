@@ -26,3 +26,11 @@ func _on_Level2Button_pressed():
 
 func _on_Level3Button_pressed():
 	get_tree().change_scene("res://scene/Level2.tscn")
+
+
+
+func _on_CheckButton_toggled(button_pressed):
+	if button_pressed==true:
+		Time.hard = true
+	else:
+		Time.hard = false
