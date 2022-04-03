@@ -118,6 +118,7 @@ stream = ExtResource( 14 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 12 )
+volume_db = -5.059
 autoplay = true
 
 [node name="EndLevelPyramideWallForeground" type="Sprite" parent="."]
