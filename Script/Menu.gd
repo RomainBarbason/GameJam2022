@@ -21,7 +21,7 @@ func _on_Level1Button_pressed():
 
 
 func _on_Level2Button_pressed():
-	get_tree().change_scene("res://scene/Level1Rom.tscn")
+	get_tree().change_scene("res://scene/Menu.tscn")
 
 
 func _on_Level3Button_pressed():
