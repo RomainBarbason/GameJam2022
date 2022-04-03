@@ -1,11 +1,11 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Script/Player.gd" type="Script" id=1]
 [ext_resource path="res://Img/player/idle/Egyptienplayeridle.png" type="Texture" id=2]
+[ext_resource path="res://Img/player/Player_idle_prod.png" type="Texture" id=3]
 
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 8.0
-height = 3.0
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 37.422, 56.7243 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "Falling"
@@ -93,14 +93,21 @@ position = Vector2( -48, -16 )
 collision_mask = 6
 script = ExtResource( 1 )
 
+[node name="PlayerIdleProd" type="Sprite" parent="."]
+position = Vector2( 32, 25 )
+scale = Vector2( 0.308594, 0.273437 )
+texture = ExtResource( 3 )
+
 [node name="Sprite" type="Sprite" parent="."]
+visible = false
 position = Vector2( 28.5, 29 )
 texture = ExtResource( 2 )
 hframes = 7
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 29, 22 )
-shape = SubResource( 1 )
+position = Vector2( 28, 24.7243 )
+scale = Vector2( 0.88, 0.935 )
+shape = SubResource( 7 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 visible = false
