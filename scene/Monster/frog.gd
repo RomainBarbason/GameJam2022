@@ -26,8 +26,8 @@ func _physics_process(delta):
 		velocity.x = direction.x * speed
 		$Sprite.scale.x *= -1
 
-func die():
-	get_tree().reload_current_scene()
+#func die():
+	#get_tree().reload_current_scene()
 
 func _on_PlayerDetector_body_entered(body):
 	body.die() # Replace with function body.
