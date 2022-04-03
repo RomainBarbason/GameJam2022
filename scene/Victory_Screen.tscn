@@ -1,0 +1,78 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Script/Menu.gd" type="Script" id=1]
+[ext_resource path="res://Img/background/Nil_prod.png" type="Texture" id=2]
+[ext_resource path="res://Script/ScrollingBackground.gd" type="Script" id=3]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type canvas_item;
+uniform float scroll_speed;
+void fragment(){
+    vec2 shifteduv = UV;
+    shifteduv .x += TIME * scroll_speed;
+    vec4 color = texture(TEXTURE, shifteduv);
+    COLOR = color;
+}"
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = SubResource( 1 )
+shader_param/scroll_speed = null
+
+[node name="Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_top = 1.0
+script = ExtResource( 1 )
+
+[node name="Background" type="TextureRect" parent="."]
+material = SubResource( 2 )
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_top = -256.0
+margin_right = 2048.0
+margin_bottom = 256.0
+texture = ExtResource( 2 )
+stretch_mode = 2
+script = ExtResource( 3 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 350.0
+margin_top = 221.0
+margin_right = 715.0
+margin_bottom = 367.0
+tab_size = 7
+text = "VICTORY, YOU SURVIVED THE PLAGUES, GOOD JOB!"
+fit_content_height = true
+scroll_active = false
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -258.5
+margin_top = -34.0
+margin_right = 258.5
+margin_bottom = 34.0
+
+[node name="Level1Button" type="Button" parent="VBoxContainer"]
+margin_right = 517.0
+margin_bottom = 20.0
+text = "Play Again"
+script = ExtResource( 1 )
+
+[node name="Level2Button" type="Button" parent="VBoxContainer"]
+margin_top = 24.0
+margin_right = 517.0
+margin_bottom = 44.0
+text = "Menu"
+script = ExtResource( 1 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 511, 300 )
+current = true
+zoom = Vector2( 0.85, 0.85 )
+
+[connection signal="pressed" from="VBoxContainer/Level1Button" to="." method="_on_Level1Button_pressed"]
+[connection signal="pressed" from="VBoxContainer/Level2Button" to="." method="_on_Level2Button_pressed"]
