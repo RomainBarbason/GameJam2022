@@ -75,6 +75,7 @@ text = "Menu"
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 511, 300 )
+current = true
 zoom = Vector2( 0.85, 0.85 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
