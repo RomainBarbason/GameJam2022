@@ -38,7 +38,7 @@ extents = Vector2( 5.5, 31.5 )
 extents = Vector2( 5, 24 )
 
 [sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 32, 19.5 )
+extents = Vector2( 32, 20.25 )
 
 [sub_resource type="RectangleShape2D" id=10]
 extents = Vector2( 32, 29.5 )
@@ -88,6 +88,7 @@ texture = ExtResource( 10 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Plateforme2Bord/StaticBody2D"]
 position = Vector2( 0.5, -24 )
 shape = SubResource( 5 )
+one_way_collision = true
 
 [node name="Plateformebois" type="Sprite" parent="."]
 position = Vector2( -3, 93 )
@@ -98,6 +99,7 @@ texture = ExtResource( 8 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Plateformebois/StaticBody2D"]
 position = Vector2( 0, -24 )
 shape = SubResource( 6 )
+one_way_collision = true
 
 [node name="Plateformebord" type="Sprite" parent="."]
 position = Vector2( 78, 93 )
@@ -108,6 +110,7 @@ texture = ExtResource( 9 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Plateformebord/StaticBody2D"]
 position = Vector2( 2, -24 )
 shape = SubResource( 7 )
+one_way_collision = true
 
 [node name="Longpoteau" type="Sprite" parent="."]
 position = Vector2( 159, 188 )
@@ -140,7 +143,7 @@ texture = ExtResource( 7 )
 [node name="StaticBody2D" type="StaticBody2D" parent="Sable2Bord"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sable2Bord/StaticBody2D"]
-position = Vector2( 0, 12 )
+position = Vector2( 1, 12 )
 shape = SubResource( 9 )
 
 [node name="UpWater" type="Sprite" parent="."]
