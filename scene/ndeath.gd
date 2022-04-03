@@ -1,4 +1,4 @@
-extends Control
+extends Label
 
 
 # Declare member variables here. Examples:
@@ -6,23 +6,16 @@ extends Control
 # var b = "text"
 
 
+
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
-
+	print(Time.death)
+	if (Time.death < 10):
+		text = "You died only " + str(Time.death) + " times, awesome!"# replace with any String
+	else :
+		text = "You died for a total of " + str(Time.death) + ", You can do better!"# replace with any String
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
-
-func _on_Level1Button_pressed():
-	Time.death = 0
-	get_tree().change_scene("res://scene/Level0.tscn")
-	
-
-
-func _on_Level2Button_pressed():
-	Time.death = 0
-	get_tree().change_scene("res://scene/Menu.tscn")
-	
