@@ -15,7 +15,7 @@ func _ready():
 #func _process(delta):
 #	pass
 func die():
-	get_tree().reload_current_scene()
+	get_tree().change_scene("res://scene/GameOver.tscn")
 
 func _on_waterLevel_body_entered(body):
-	die()
+	body.die()
