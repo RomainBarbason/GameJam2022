@@ -30,14 +30,14 @@ func _physics_process(delta):
 	if Input.is_action_pressed("right"):
 		motion.x += ACCEL
 		facing_right = true
-		#$AnimationPlayer.play("Running")
+		$AnimationPlayer.play("Running")
 	elif Input.is_action_pressed("left"):
 		motion.x -= ACCEL
 		facing_right = false
-		#$AnimationPlayer.play("Running")
+		$AnimationPlayer.play("Running")
 	else:
 		motion.x = lerp(motion.x, 0, 0.2) #acceleration du perso
-		#$AnimationPlayer.play("Idle")
+		$AnimationPlayer.play("Idle")
 		
 	if is_on_floor():
 		if Input.is_action_just_pressed("jump"):
@@ -45,11 +45,9 @@ func _physics_process(delta):
 			
 	if !is_on_floor():
 		if motion.y < 0:
-			pass
-			#$AnimationPlayer.play("Jump")
+			$AnimationPlayer.play("Jump")
 		elif motion.y > 0:
-			pass
-			#$AnimationPlayer.play("Falling")
+			$AnimationPlayer.play("Falling")
 		
 	if Input.is_action_pressed("Die"):
 		die()
