@@ -2,10 +2,10 @@ extends KinematicBody2D
 
 const UP = Vector2(0, -1)
 const GRAVITY = 20
-const MAXFALLSPEED = 500
-const MAXSPEED = 160
+const MAXFALLSPEED = 1000
+const MAXSPEED = 200
 const JUMPFORCE = 500
-const ACCEL = 20
+const ACCEL = 100
 
 
 var motion = Vector2()
@@ -58,3 +58,7 @@ func _physics_process(delta):
 	
 func die():
 	get_tree().reload_current_scene()
+
+
+func _on_WaterCollider_body_entered(body):
+	die() # Replace with function body.
