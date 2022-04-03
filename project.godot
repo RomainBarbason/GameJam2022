@@ -14,7 +14,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://src/day_night_cycle/day_night_cycle.gd"
 }, {
-"base": "Reference",
+"base": "PopupPanel",
 "class": "DebugOverlay",
 "language": "GDScript",
 "path": "res://src/debug_overlay/debug_overlay.gd"
@@ -24,7 +24,7 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Script/Sauterelle.gd"
 }, {
-"base": "Reference",
+"base": "Light2D",
 "class": "MoonLight",
 "language": "GDScript",
 "path": "res://src/moon_light/moon_light.gd"
@@ -38,13 +38,17 @@ _global_script_class_icons={
 
 [application]
 
-config/name="GameJam2022"
+config/name="Fall Of Egypt"
 run/main_scene="res://scene/Menu.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 Time="*res://src/singletons/time.gd"
+
+[display]
+
+window/size/resizable=false
 
 [input]
 

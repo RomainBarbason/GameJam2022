@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Script/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Img/background/Pyramide_prod.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://UI/kenneyUI-green.tres" type="Theme" id=5]
 [ext_resource path="res://UI/kenneyUI-red.tres" type="Theme" id=6]
 [ext_resource path="res://music/gamejam22.wav" type="AudioStream" id=7]
+[ext_resource path="res://Img/Menu_title_prod.png" type="Texture" id=8]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
@@ -78,17 +79,14 @@ position = Vector2( 511, 300 )
 current = true
 zoom = Vector2( 0.85, 0.85 )
 
-[node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = 439.0
-margin_top = 215.0
-margin_right = 591.0
-margin_bottom = 252.0
-theme = ExtResource( 5 )
-text = "Fall Of Egypt"
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
 autoplay = true
+
+[node name="MenuTitleProd" type="Sprite" parent="."]
+position = Vector2( 515, 193 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 8 )
 
 [connection signal="pressed" from="VBoxContainer/Level1Button" to="." method="_on_Level1Button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Level2Button" to="." method="_on_Level2Button_pressed"]
