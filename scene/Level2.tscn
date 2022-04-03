@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://Img/background/Nil_eclipse_prod.png" type="Texture" id=1]
 [ext_resource path="res://scene/Player.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://Script/Label.gd" type="Script" id=14]
 [ext_resource path="res://Img/tileset/skull_pannel.png" type="Texture" id=15]
 [ext_resource path="res://scene/Monster/enemy_generator.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scene/Monster/Mocus.tscn" type="PackedScene" id=17]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
@@ -155,6 +156,9 @@ shape = SubResource( 3 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 13 )
 autoplay = true
+
+[node name="Mocus" parent="." instance=ExtResource( 17 )]
+scale = Vector2( 5, 5 )
 
 [connection signal="create_enemy" from="EnemyGenerator" to="." method="_on_EnemyGenerator_create_enemy"]
 [connection signal="body_entered" from="WinWall" to="WinWall" method="_on_WinWall_body_entered"]
