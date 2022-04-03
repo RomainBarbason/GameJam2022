@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://scene/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Img/tileset/Tileset3.tres" type="TileSet" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://scene/waterLevel.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Script/Label.gd" type="Script" id=13]
 [ext_resource path="res://Img/tileset/skull_pannel.png" type="Texture" id=14]
+[ext_resource path="res://scene/Monster/Mocus.tscn" type="PackedScene" id=15]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
@@ -139,6 +140,9 @@ tile_data = PoolIntArray( -131032, 2, 0, -131025, 2, 0, -131018, 2, 0, -65482, 2
 
 [node name="waterLevel" parent="." instance=ExtResource( 12 )]
 position = Vector2( 1192, 64 )
+
+[node name="Mocus" parent="." instance=ExtResource( 15 )]
+scale = Vector2( 5, 5 )
 
 [connection signal="create_enemy" from="EnemyGenerator" to="." method="_on_EnemyGenerator_create_enemy"]
 [connection signal="body_entered" from="WinWall" to="WinWall" method="_on_WinWall_body_entered"]
