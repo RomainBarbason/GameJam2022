@@ -55,7 +55,7 @@ extents = Vector2( 31.5, 31.5 )
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 32, 20.5 )
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D2" type="Node2D"]
 
 [node name="Blood" type="Sprite" parent="."]
 position = Vector2( 82, 2 )

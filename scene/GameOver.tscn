@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Script/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Img/background/Nil_prod.png" type="Texture" id=2]
 [ext_resource path="res://Script/ScrollingBackground.gd" type="Script" id=3]
+[ext_resource path="res://music/DefaiteMort.wav" type="AudioStream" id=4]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
@@ -73,6 +74,10 @@ script = ExtResource( 1 )
 position = Vector2( 511, 300 )
 current = true
 zoom = Vector2( 0.85, 0.85 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Level1Button" to="." method="_on_Level1Button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Level2Button" to="." method="_on_Level2Button_pressed"]
