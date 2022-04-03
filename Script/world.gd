@@ -23,7 +23,7 @@ func _process(delta):
 	background.rect_position = new_position
 	
 	if player.get_position().x < (camera_pos.x - view.x)-30:
-		get_tree().reload_current_scene()
+		get_tree().change_scene("res://scene/GameOver.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
