@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scene/GameOver.gd" type="Script" id=1]
 [ext_resource path="res://Img/background/Nil_eclipse_prod.png" type="Texture" id=2]
 [ext_resource path="res://Script/ScrollingBackground.gd" type="Script" id=3]
 [ext_resource path="res://music/DefaiteMort.wav" type="AudioStream" id=4]
+[ext_resource path="res://UI/kenneyUI-red.tres" type="Theme" id=5]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
@@ -42,6 +43,8 @@ margin_left = 471.0
 margin_top = 223.0
 margin_right = 786.0
 margin_bottom = 369.0
+theme = ExtResource( 5 )
+bbcode_enabled = true
 tab_size = 7
 text = "GAME OVER"
 fit_content_height = true
@@ -59,13 +62,15 @@ margin_bottom = 34.0
 
 [node name="Level1Button" type="Button" parent="VBoxContainer"]
 margin_right = 517.0
-margin_bottom = 20.0
+margin_bottom = 42.251
+theme = ExtResource( 5 )
 text = "Retry"
 
 [node name="Level2Button" type="Button" parent="VBoxContainer"]
-margin_top = 24.0
+margin_top = 46.0
 margin_right = 517.0
-margin_bottom = 44.0
+margin_bottom = 88.251
+theme = ExtResource( 5 )
 text = "Menu"
 
 [node name="Camera2D" type="Camera2D" parent="."]

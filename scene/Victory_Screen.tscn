@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Script/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Img/background/Nil_prod.png" type="Texture" id=2]
 [ext_resource path="res://Script/ScrollingBackground.gd" type="Script" id=3]
+[ext_resource path="res://UI/kenneyUI-yellow.tres" type="Theme" id=4]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
@@ -37,10 +38,11 @@ stretch_mode = 2
 script = ExtResource( 3 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = 350.0
+margin_left = 271.0
 margin_top = 221.0
-margin_right = 715.0
+margin_right = 783.0
 margin_bottom = 367.0
+theme = ExtResource( 4 )
 tab_size = 7
 text = "VICTORY, YOU SURVIVED THE PLAGUES, GOOD JOB!"
 fit_content_height = true
@@ -58,14 +60,16 @@ margin_bottom = 34.0
 
 [node name="Level1Button" type="Button" parent="VBoxContainer"]
 margin_right = 517.0
-margin_bottom = 20.0
+margin_bottom = 42.251
+theme = ExtResource( 4 )
 text = "Play Again"
 script = ExtResource( 1 )
 
 [node name="Level2Button" type="Button" parent="VBoxContainer"]
-margin_top = 24.0
+margin_top = 46.0
 margin_right = 517.0
-margin_bottom = 44.0
+margin_bottom = 88.251
+theme = ExtResource( 4 )
 text = "Menu"
 script = ExtResource( 1 )
 

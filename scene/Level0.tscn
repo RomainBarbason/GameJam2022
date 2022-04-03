@@ -78,7 +78,7 @@ position = Vector2( 6, 47 )
 current = true
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
-position = Vector2( 2840, 200 )
+position = Vector2( -296, 208 )
 scale = Vector2( 0.18, 0.18 )
 collision_mask = 14
 
