@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://scene/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Img/tileset/Tileset3.tres" type="TileSet" id=2]
@@ -14,6 +14,8 @@
 [ext_resource path="res://music/gamejam2.mp3" type="AudioStream" id=12]
 [ext_resource path="res://Img/background/End_level_pyramide_wall_foreground.png" type="Texture" id=13]
 [ext_resource path="res://music/Victoire.wav" type="AudioStream" id=14]
+[ext_resource path="res://scene/mouches.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scene/mouches.gd" type="Script" id=16]
 
 [sub_resource type="Shader" id=4]
 code = "shader_type canvas_item;
@@ -90,6 +92,9 @@ collision_layer = 0
 collision_mask = 0
 format = 1
 tile_data = PoolIntArray( 4, 8, 0, 5, 8, 0, 65540, 9, 0, 65541, 9, 0, 131076, 9, 0, 131077, 9, 0 )
+
+[node name="mouches" parent="." instance=ExtResource( 15 )]
+script = ExtResource( 16 )
 
 [node name="Sauterelle" parent="." instance=ExtResource( 7 )]
 position = Vector2( 1041, 27 )
