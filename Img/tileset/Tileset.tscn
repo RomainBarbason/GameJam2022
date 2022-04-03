@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Img/tileset/sable2.png" type="Texture" id=1]
 [ext_resource path="res://Img/tileset/up_water.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Img/tileset/Plateformebord.png" type="Texture" id=9]
 [ext_resource path="res://Img/tileset/Plateforme2bord.png" type="Texture" id=10]
 [ext_resource path="res://Img/tileset/poteau.png" type="Texture" id=11]
+[ext_resource path="res://Img/tileset/longpoteau.png" type="Texture" id=12]
 
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 32, 32 )
@@ -29,6 +30,9 @@ extents = Vector2( 32, 8 )
 
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 30, 8 )
+
+[sub_resource type="RectangleShape2D" id=12]
+extents = Vector2( 5.5, 31.5 )
 
 [sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 5, 24 )
@@ -105,15 +109,29 @@ texture = ExtResource( 9 )
 position = Vector2( 2, -24 )
 shape = SubResource( 7 )
 
+[node name="Longpoteau" type="Sprite" parent="."]
+position = Vector2( 159, 188 )
+texture = ExtResource( 12 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Longpoteau"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Longpoteau/StaticBody2D"]
+position = Vector2( -15.5, -0.5 )
+shape = SubResource( 12 )
+disabled = true
+
 [node name="Poteau" type="Sprite" parent="."]
 position = Vector2( 160, 83 )
 texture = ExtResource( 11 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Poteau"]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Poteau/StaticBody2D"]
+show_behind_parent = true
 position = Vector2( -15, 8 )
 shape = SubResource( 8 )
+disabled = true
 
 [node name="Sable2Bord" type="Sprite" parent="."]
 position = Vector2( 251, 91 )
