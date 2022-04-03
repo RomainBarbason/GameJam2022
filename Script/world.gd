@@ -38,3 +38,11 @@ func _on_EnemyGenerator_create_enemy(enemy, location):
 	enemy_instance.global_position = Vector2(rand_range(camera_pos.x - view.x, camera_pos.x + view.x),camera_pos.y - view.y)
 	
 	
+
+
+func _on_EnemyGenerator2_create_enemy(enemy, location):
+	var enemy_instance = enemy.instance()
+	add_child(enemy_instance)
+	var camera_pos = camera.get_camera_screen_center()
+	var view = get_viewport_rect().size / 2
+	enemy_instance.global_position = Vector2(rand_range(camera_pos.x - view.x/2, camera_pos.x + view.x+view.x/2),camera_pos.y - view.y)
