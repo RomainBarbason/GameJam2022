@@ -130,12 +130,11 @@ stream = ExtResource( 9 )
 autoplay = true
 
 [node name="Invisible" type="TileMap" parent="."]
-visible = false
 tile_set = ExtResource( 2 )
 collision_layer = 32
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( -131032, 2, 0, -131025, 2, 0, -131018, 2, 0, -65482, 2, 0, 54, 2, 0, 65576, 2, 0, 65590, 2, 0, 131112, 2, 0, 131126, 2, 0, 196612, 2, 0, 196616, 2, 0, 196623, 2, 0, 196627, 2, 0, 196648, 2, 0, 196662, 2, 0, 262184, 2, 0, 262185, 2, 0 )
+tile_data = PoolIntArray( -131032, 2, 0, -131025, 2, 0, 65576, 2, 0, 131112, 2, 0, 196612, 2, 0, 196616, 2, 0, 196623, 2, 0, 196627, 2, 0, 196648, 2, 0, 196655, 536870914, 0, 262184, 2, 0, 262185, 2, 0 )
 
 [node name="waterLevel" parent="." instance=ExtResource( 12 )]
 position = Vector2( 1192, 64 )
