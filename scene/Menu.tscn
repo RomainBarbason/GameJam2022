@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Script/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Img/background/Pyramide_prod.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://UI/kenneyUI-blue.tres" type="Theme" id=4]
 [ext_resource path="res://UI/kenneyUI-green.tres" type="Theme" id=5]
 [ext_resource path="res://UI/kenneyUI-red.tres" type="Theme" id=6]
+[ext_resource path="res://music/gamejam22.wav" type="AudioStream" id=7]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
@@ -84,6 +85,10 @@ margin_right = 591.0
 margin_bottom = 252.0
 theme = ExtResource( 5 )
 text = "Fall Of Egypt"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Level1Button" to="." method="_on_Level1Button_pressed"]
 [connection signal="pressed" from="VBoxContainer/Level2Button" to="." method="_on_Level2Button_pressed"]
