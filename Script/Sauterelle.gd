@@ -2,10 +2,10 @@ class_name Mob
 extends KinematicBody2D
 
 
-export var speed = 150.0
+export var speed = 200.0
 export var direction = Vector2.LEFT
-export var gravity = 400.0
-const JUMPFORCE = 140
+export var gravity = 500.0
+const JUMPFORCE = 180
 
 var jump = preload("res://Img/monster/Sauterelle_jump_contour_prod.png")
 var ground = preload("res://Img/monster/Sauterelle_idle_contour_prod.png")
