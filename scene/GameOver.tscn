@@ -79,6 +79,7 @@ zoom = Vector2( 0.85, 0.85 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
+volume_db = -5.406
 autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/Level1Button" to="." method="_on_Level1Button_pressed"]
