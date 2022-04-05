@@ -1,4 +1,4 @@
-<img src="/Img/Menu_title_prod.png" align="center" width="2640" height="512">
+<img src="/Img/Menu_title_prod.png" align="center" width="660" height="128">
 
 # Fall Of Egypt
 A 2D platformer game about the 10 plagues of Egypt
