@@ -11,8 +11,9 @@ func _ready():
 	Time.death += 1
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	if Input.is_action_just_pressed("restart"):
+		get_tree().change_scene(Time.prevscene)
 
 
 func _on_Level1Button_pressed():

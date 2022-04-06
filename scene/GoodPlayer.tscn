@@ -4,7 +4,7 @@
 [ext_resource path="res://Img/player/Player_Sprites.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 109.091, 201.07 )
+extents = Vector2( 145.455, 205.348 )
 
 [sub_resource type="Animation" id=2]
 resource_name = "Falling"
@@ -98,8 +98,8 @@ texture = ExtResource( 2 )
 hframes = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 32, 36 )
-scale = Vector2( 0.828, 0.922 )
+position = Vector2( 32, 32 )
+scale = Vector2( 0.88, 0.935 )
 shape = SubResource( 7 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

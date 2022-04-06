@@ -5,7 +5,6 @@ extends Control
 # var a = 2
 # var b = "text"
 
-
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	Time.hard = false
@@ -34,3 +33,10 @@ func _on_CheckButton_toggled(button_pressed):
 		Time.hard = true
 	else:
 		Time.hard = false
+
+
+func _on_HSlider_value_changed(value):
+	Time.speed = (value)/100
+	$VBoxContainer/GameSpeed.text = "Scroll Speed:" + str(Time.speed)
+	
+

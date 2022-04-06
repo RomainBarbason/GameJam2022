@@ -64,7 +64,7 @@ margin_bottom = 34.0
 margin_right = 517.0
 margin_bottom = 42.251
 theme = ExtResource( 5 )
-text = "Retry"
+text = "Retry (Press R)"
 
 [node name="Level2Button" type="Button" parent="VBoxContainer"]
 margin_top = 46.0

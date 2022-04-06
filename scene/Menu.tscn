@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Script/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Img/background/Pyramide_prod.png" type="Texture" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://music/gamejam22.wav" type="AudioStream" id=7]
 [ext_resource path="res://Img/Menu_title_prod.png" type="Texture" id=8]
 [ext_resource path="res://UI/kenneyUI-yellow.tres" type="Theme" id=9]
+[ext_resource path="res://Script/SpeedSlider.gd" type="Script" id=10]
+[ext_resource path="res://UI/kenneyUI.tres" type="Theme" id=11]
 
 [sub_resource type="Shader" id=1]
 code = "shader_type canvas_item;
@@ -83,6 +85,33 @@ theme = ExtResource( 6 )
 text = "Hard mode"
 align = 1
 
+[node name="GameSpeed" type="RichTextLabel" parent="VBoxContainer"]
+margin_top = 202.0
+margin_right = 517.0
+margin_bottom = 221.0
+theme = ExtResource( 9 )
+tab_size = 7
+text = "Scroll Speed : 100"
+fit_content_height = true
+scroll_active = false
+
+[node name="SpeedSlider" type="HSlider" parent="VBoxContainer"]
+margin_top = 225.0
+margin_right = 517.0
+margin_bottom = 267.0
+theme = ExtResource( 11 )
+script = ExtResource( 10 )
+
+[node name="command" type="RichTextLabel" parent="VBoxContainer"]
+margin_top = 271.0
+margin_right = 517.0
+margin_bottom = 290.0
+theme = ExtResource( 9 )
+tab_size = 7
+text = "input Z for up, Q for left, D for right"
+fit_content_height = true
+scroll_active = false
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 511, 300 )
 current = true
@@ -102,3 +131,4 @@ texture = ExtResource( 8 )
 [connection signal="pressed" from="VBoxContainer/Level3Button" to="." method="_on_Level3Button_pressed"]
 [connection signal="pressed" from="VBoxContainer/CheckButton" to="." method="_on_CheckButton_pressed"]
 [connection signal="toggled" from="VBoxContainer/CheckButton" to="." method="_on_CheckButton_toggled"]
+[connection signal="value_changed" from="VBoxContainer/SpeedSlider" to="." method="_on_HSlider_value_changed"]

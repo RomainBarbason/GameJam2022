@@ -13,7 +13,7 @@ func _ready():
 	Time.prevscene = get_tree().current_scene.filename
 
 func _process(delta):
-	x += 0.02 #0.02
+	x += Time.speed * delta #0.02
 	camera.set_h_offset(x)
 	var view = get_viewport_rect().size / 2
 	var camera_pos = camera.get_camera_screen_center()
